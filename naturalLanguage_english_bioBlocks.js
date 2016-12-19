@@ -386,7 +386,7 @@ Blockly.NaturalLanguage_english['experiment'] = function(block) {
 		}*/
 		var item = childrenArray[k].getFieldValue();
 		var equipmentName = getEquipmentName(item); //block title
-		if (equipmentName and !(comparationArray.hasOwnProperty(equipmentName)) ) {
+		if (equipmentName && !(comparationArray.hasOwnProperty(equipmentName)) ) {
 			code = code + '* ' + equipmentName + '\n';
 			comparationArray[childrenArray[k].getFieldValue()] = k;
 		}
